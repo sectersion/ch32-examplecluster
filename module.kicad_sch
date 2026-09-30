@@ -1170,6 +1170,26 @@
 		)
 		(uuid "a9a9211c-4124-4e54-92f1-4c36f22859b9")
 	)
+	(wire
+		(pts
+			(xy 100.33 59.69) (xy 106.68 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0db5a04-92e1-4dbd-aaf2-5d5aa8301589")
+	)
+	(wire
+		(pts
+			(xy 90.17 59.69) (xy 90.17 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb1d3640-c49b-40a9-82ee-9a9f03fcaefb")
+	)
 	(label "SWIO"
 		(at 156.21 87.63 180)
 		(effects
@@ -1181,12 +1201,12 @@
 		(uuid "01797044-24ae-4334-bd2f-b356424623b8")
 	)
 	(label "SWIO"
-		(at 96.52 73.66 180)
+		(at 90.17 66.04 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "13117f58-1f04-4616-ac61-63b189fa741e")
 	)
@@ -1233,6 +1253,112 @@
 			(justify right)
 		)
 		(uuid "b4585093-fcb0-4cf7-b32a-6c7193289fd0")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7701da4a-e6cb-493e-8169-8fcd70b5f5b3")
+		(property "Reference" "#PWR043"
+			(at 95.25 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a85821d6-afe4-4a93-a94b-0a3becc3dc88")
+		)
+		(instances
+			(project "ch32-examplecluster"
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/0c9dcd35-00e2-4549-8f32-29303f94d587"
+					(reference "#PWR049")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/0da6b037-c877-4930-b7af-32b6974c4ac2"
+					(reference "#PWR050")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/62fc4a20-2c83-465a-ad7e-497fa1c5b647"
+					(reference "#PWR043")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/b3086bcf-71e8-4bf3-b62b-734044154ada"
+					(reference "#PWR044")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/ca90279e-a914-4fac-ac47-a9b0188e6f52"
+					(reference "#PWR046")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/d232c880-e5bd-4f7d-be7f-45aaeea8346c"
+					(reference "#PWR045")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/ed79a48c-c2c3-4640-a2da-02a886cbfe09"
+					(reference "#PWR048")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/fee651fe-3a2b-4ca1-94aa-c228dc6dfbb3"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1714,6 +1840,324 @@
 				)
 				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/fee651fe-3a2b-4ca1-94aa-c228dc6dfbb3"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 106.68 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c78e6125-adfc-44ab-b535-0916fd92e2b9")
+		(property "Reference" "#PWR051"
+			(at 106.68 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 106.68 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 106.68 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "68c57e92-f3af-47d2-b91a-1ef93ac81398")
+		)
+		(instances
+			(project "ch32-examplecluster"
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/0c9dcd35-00e2-4549-8f32-29303f94d587"
+					(reference "#PWR057")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/0da6b037-c877-4930-b7af-32b6974c4ac2"
+					(reference "#PWR058")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/62fc4a20-2c83-465a-ad7e-497fa1c5b647"
+					(reference "#PWR051")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/b3086bcf-71e8-4bf3-b62b-734044154ada"
+					(reference "#PWR052")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/ca90279e-a914-4fac-ac47-a9b0188e6f52"
+					(reference "#PWR054")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/d232c880-e5bd-4f7d-be7f-45aaeea8346c"
+					(reference "#PWR053")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/ed79a48c-c2c3-4640-a2da-02a886cbfe09"
+					(reference "#PWR056")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/fee651fe-3a2b-4ca1-94aa-c228dc6dfbb3"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 95.25 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e42c4570-73f4-4af4-a758-91f2182576a5")
+		(property "Reference" "TP9"
+			(at 93.472 50.292 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.472 52.832 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 95.25 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c6e0a601-3eae-4337-96d4-565b20afc999")
+		)
+		(instances
+			(project "ch32-examplecluster"
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/0c9dcd35-00e2-4549-8f32-29303f94d587"
+					(reference "TP15")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/0da6b037-c877-4930-b7af-32b6974c4ac2"
+					(reference "TP16")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/62fc4a20-2c83-465a-ad7e-497fa1c5b647"
+					(reference "TP9")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/b3086bcf-71e8-4bf3-b62b-734044154ada"
+					(reference "TP10")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/ca90279e-a914-4fac-ac47-a9b0188e6f52"
+					(reference "TP12")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/d232c880-e5bd-4f7d-be7f-45aaeea8346c"
+					(reference "TP11")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/ed79a48c-c2c3-4640-a2da-02a886cbfe09"
+					(reference "TP14")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/fee651fe-3a2b-4ca1-94aa-c228dc6dfbb3"
+					(reference "TP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 100.33 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e7783164-aad3-47a5-aa10-ebba30741acb")
+		(property "Reference" "TP17"
+			(at 98.552 50.292 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VDD"
+			(at 98.552 52.832 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 100.33 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27621cf5-da58-4b55-a58b-9822b03ff128")
+		)
+		(instances
+			(project "ch32-examplecluster"
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/0c9dcd35-00e2-4549-8f32-29303f94d587"
+					(reference "TP23")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/0da6b037-c877-4930-b7af-32b6974c4ac2"
+					(reference "TP24")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/62fc4a20-2c83-465a-ad7e-497fa1c5b647"
+					(reference "TP17")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/b3086bcf-71e8-4bf3-b62b-734044154ada"
+					(reference "TP18")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/ca90279e-a914-4fac-ac47-a9b0188e6f52"
+					(reference "TP20")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/d232c880-e5bd-4f7d-be7f-45aaeea8346c"
+					(reference "TP19")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/ed79a48c-c2c3-4640-a2da-02a886cbfe09"
+					(reference "TP22")
+					(unit 1)
+				)
+				(path "/04714a39-8e1d-488a-bf4e-03111a5b2718/fee651fe-3a2b-4ca1-94aa-c228dc6dfbb3"
+					(reference "TP21")
 					(unit 1)
 				)
 			)
